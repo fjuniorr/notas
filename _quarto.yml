@@ -2,4 +2,9 @@ project:
   type: website
 
 website:
-  title: "today"
+  repo-url: https://github.com/fjuniorr/notas
+  repo-actions: [edit, issue]
+  navbar:
+    left:
+    - href: index.md
+      text: Home
