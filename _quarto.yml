@@ -8,3 +8,6 @@ website:
     left:
     - href: index.md
       text: Home
+    right:
+      - icon: github
+        href: https://github.com/fjuniorr/notas

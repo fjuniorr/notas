@@ -1,5 +1,13 @@
 ---
 title: Importação
+author: Francisco
+description: |
+    Especificação sobre uma coisa relevante.
+
+    Posso criar algo de mais de uma linha aqui.
+categories:
+  - research
+date: 2020-03-24
 toc: true
 ---
 
@@ -14,6 +22,10 @@ toc: true
     - Other examples
 
 ## Context
+
+[Link para outra nota](/20230324T170445)
+
+![](20230324T093219.png)
 
 Apesar de serem ambas iniciativas da Open Knowledge, o CKAN não possui suporte nativo para a importação de pacotes de dados. Atualmente a CGE tem feito a importação por meio de uma ferramenta CLI desenvolvida internamente, o [dpckan](https://github.com/transparencia-mg/dpckan). O `dpckan` atualmente faz o mapeamento de algumas propriedades entre _frictionless_ e CKAN, mas ainda armazena o arquivo `datapackage.json` como um recurso adicional no conjunto de dados do CKAN.
 

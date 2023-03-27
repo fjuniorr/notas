@@ -1,0 +1,33 @@
+---
+title: SQL code chunks
+author: Henrique
+date: 2023-02-01
+format:
+  html:
+    number-sections: true
+execute:
+  echo: true
+toc: true
+lang: pt
+categories:
+  - research
+  - design spec
+---
+
+## Set up the database table
+
+```{r setup, message = FALSE}
+library(DBI)
+con <- dbConnect(RSQLite::SQLite(), "oddsportal.db")
+```
+
+## View the file
+
+```{sql connection=con}
+select id, date, home, away from xfl where stage = 'Scheduled';
+```
+
+
+```{r}
+dbDisconnect(con)
+```

@@ -1,4 +1,7 @@
 ---
 title: "Listing Example"
-listing: table
+listing: 
+    type: default
+    categories: true
+    fields: [date, title, author, description, categories]
 ---
