@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "20230324T135907/index.html",
+    "href": "20230324T135907/index.html",
+    "title": "Importação",
+    "section": "",
+    "text": "Context\nWhat\n\nAcceptance criteria\n\nWhy\nHow\nOpen questions\nExamples/Research\n\nLow-fidelity mockup\nOther examples"
+  },
+  {
+    "objectID": "20230324T135907/index.html#context",
+    "href": "20230324T135907/index.html#context",
+    "title": "Importação",
+    "section": "Context",
+    "text": "Context\nLink para outra nota\n\nApesar de serem ambas iniciativas da Open Knowledge, o CKAN não possui suporte nativo para a importação de pacotes de dados. Atualmente a CGE tem feito a importação por meio de uma ferramenta CLI desenvolvida internamente, o dpckan. O dpckan atualmente faz o mapeamento de algumas propriedades entre frictionless e CKAN, mas ainda armazena o arquivo datapackage.json como um recurso adicional no conjunto de dados do CKAN.\nApesar da importância de um fluxo de importação programático que permita a automatização das publicações e atualizações, as oficinas piloto com os órgãos e entidades tem demonstrado a importância de um fluxo de importação manual via interface gráfica para usuários iniciantes e/ou não técnicos1."
+  },
+  {
+    "objectID": "20230324T135907/index.html#open-questions",
+    "href": "20230324T135907/index.html#open-questions",
+    "title": "Importação",
+    "section": "Open questions",
+    "text": "Open questions\n\nComo o pacote de dados e seu conteúdo devem ser armazenados no CKAN?\nÉ possível uma conversão ida-e-volta sem perda de metadados (lossless) entre um pacote de dados frictionless e um conjunto de dados CKAN?\nComo permitir que alterações nos metadados sejam realizadas pela interface gráfica e/ou interface de linha de comando? Vide dpckan#153"
+  },
+  {
+    "objectID": "20230324T135907/index.html#examplesresearch",
+    "href": "20230324T135907/index.html#examplesresearch",
+    "title": "Importação",
+    "section": "Examples/Research",
+    "text": "Examples/Research\n\nReplicação e sincronização de um data package com CKAN - Discussão sobre o fluxo de importação de pacotes de dados armazenados em um repositório git com indicação de ferramentas possivelmente úteis oferecidas por um ex-desenvolvedor da Open Knowledge. Ele relatou que a extensão ckanext-datapackager é próxima do que precisamos, mas não permite sobrescrever um conjunto de dados já existente.\nFrictionless CKAN Mapper - Bibliotecas em Python e Javascript para conversão de pacotes de dados frictionless e conjuntos de dados CKAN.\nCKAN Client Guide - Guia da Datopian sobre as bibliotecas ckan-client-py e ckan-client-js para interação programática com uma instância do CKAN\nSupport for Simple Data Format Data Packages #778 - Discussão sobre importação e exportação de pacotes de dados usando Open Refine\nAdvance CKAN plugin to the stable state #475\nCKAN - Data Curator Integration"
+  },
+  {
+    "objectID": "20230324T212145/index.html",
+    "href": "20230324T212145/index.html",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\n\n\n\n\nImportant\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\nThis is markdown\n\\[\nx_i = y_i\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Fonte de Recurso União\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nAndrey\n\n\n\n\n\n\n\n\nImportação\n\n\n\n\n\n\n\nresearch\n\n\n\n\nEspecificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.\n\n\n\n\n\n\nMar 24, 2020\n\n\nFrancisco\n\n\n\n\n\n\n\n\nPython Jupyter\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nSQL code chunks\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nHenrique\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "20230324T170445/index.html",
+    "href": "20230324T170445/index.html",
+    "title": "Fonte de Recurso União",
+    "section": "",
+    "text": "Download do arquivo excel\nEsse conjunto de dados visa divulgar a matriz de correspondências entre as classificações orçamentárias vigentes no Estado de Minas Gerais e as codificações das fontes de recurso estabelecidas por meio da Portaria Conjunta STN SOF nº 20/2021 e da Portaria STN n° 710/2021 (e atualizações)."
+  },
+  {
+    "objectID": "20230324T170445/index.html#leiaute-arquivos",
+    "href": "20230324T170445/index.html#leiaute-arquivos",
+    "title": "Fonte de Recurso União",
+    "section": "1 Leiaute arquivos",
+    "text": "1 Leiaute arquivos\nOs dois arquivos serão atualizados diariamente com as novas combinações de classificações orçamentárias1 de receita e despesa que são criadas durante a execução orçamentária.\nAlgumas observações gerais:\n\nUm segundo conjunto de dados (em leiaute a ser definido), será publicado com o código e descrição das fontes de recurso da Portaria STN n° 710/2021. O leiaute vai armazenar os históricos das descrições para permitir a correta divulgação das informações conforme classificações orçamnetárias vigentes à época.\nNovas classificações orçamentárias podem ser adicionadas nas matrizes a partir da publicação de novas Portarias pela STN e/ou discussões do GT SEPLAG/SEF.\n\n\n\n\n\n\n\nNota\n\n\n\nA divulgação em tranparência ativa de códigos e descrição das classificações orçamentárias acontece no via Classificador Econômico da Despesa. No entanto, o formato legível por máquina hoje divulgado não permite a identificação do período em que as descrições da classificação orçamentária estavam vigentes.\nA sugestão é utilizar um formato que seja válido tanto para o classificador (a ser publicado no Portal de Dados Abertos), quanto para o processo específico relacionado a fonte de recurso da STN.\nUma sugestão de leiaute (que ainda carece de discussão e validação) é:\n\n\n\n\nTabela 1: Classificador Econômico da Desoesa\n\n\n\n\n\n\n\n\nCODIGO\nDESCRICAO\nDATA_INICIO_VIGENCIA\nDATA_FIM_VIGENCIA\n\n\n\n\n500\nRecursos Ordinários\n\n2023-02-01\n\n\n500\nRecursos não Vinculados\n2023-02-01\n2023-05-01\n\n\n500\nRecursos não Vinculados de Impostos\n2023-05-01\n\n\n\n\n\n\n\nA DATA_FIM_VIGENCIA da linha 1 é igual a DATA_INICIO_VIGENCIA da linha 2, indicando que em maio/2023 deve ser utilizada a descrição “Recursos não Vinculados”.\nOs valores ausentes de DATA_INICIO_VIGENCIA na linha 1 e DATA_FIM_VIGENCIA na linha 3 indicam que essa descrição se extende de forma indefinida.\n\n\n\n1.1 Matriz de correspondência - Despesa\nO leiaute da matriz de despesa é\n\n\n\nTabela 2: Matriz Despesa\n\n\nFONTE_STN\nANO\nMES\nUO\nACAO\nGRUPO\nFONTE\nIPU\n\n\n\n\n540\n2023\n1\n1261\n2066\n1\n23\n1\n\n\n500\n2023\n1\n2061\n4204\n1\n10\n1\n\n\n502\n2023\n2\n2061\n4204\n1\n10\n1\n\n\n\n\nObservações:\n\nIndependentemente de quando uma nova linha é adicionada na matriz Tabela 2, os empenhos correspondentes devem ter sua FONTE_STN_COD atualizada;\nOs empenhos registrados na classificação 1261|2066|1.23.1 devem ser classificados na FONTE_STN_COD 540 de janeiro/2023 em diante;\nOs empenhos registrados na classificação 2061|4204|1.10.1 devem ser classificados na FONTE_STN_COD 502 somente a partir de fevereiro de 2023;\nOs empenhos registrados em classificações que não estão presentes na matriz devem ser exibidos com a FONTE_STN_COD 898, Recursos a Classificar.\n\n\n\n1.2 Matriz de correspondência - Receita\nO leiaute da matriz de receita é\n\n\n\n\nTabela 3: Matriz Receita\n\n\nFONTE_STN\nANO\nMES\nUO\nFONTE\nRECEITA\n\n\n\n\n552\n2023\n1\n1261\n36\n1922\n\n\n501\n2023\n1\n2371\n60\n1321\n\n\n\n\n\n\nAs mesmas observações realizadas na seção Seção 1.1 para os empenhos são válidas para os registros de arrecadação da receita."
+  },
+  {
+    "objectID": "20230324T213123/index.html",
+    "href": "20230324T213123/index.html",
+    "title": "SQL code chunks",
+    "section": "",
+    "text": "library(DBI)\ncon <- dbConnect(RSQLite::SQLite(), \"oddsportal.db\")"
+  },
+  {
+    "objectID": "20230324T213123/index.html#view-the-file",
+    "href": "20230324T213123/index.html#view-the-file",
+    "title": "SQL code chunks",
+    "section": "2 View the file",
+    "text": "2 View the file\n\nselect id, date, home, away from xfl where stage = 'Scheduled';\n\n\n3 records\n\n\n\n\n\n\n\n\nid\ndate\nhome\naway\n\n\n\n\n/american-football/usa/xfl/seattle-sea-dragons-st-louis-battlehawks-bkwGph44\n2023-02-23\nSeattle Sea Dragons\nSt. Louis BattleHawks\n\n\n/american-football/usa/xfl/orlando-guardians-san-antonio-brahmas-K4ROrWYG\n2023-02-26\nOrlando Guardians\nSan Antonio Brahmas\n\n\n/american-football/usa/xfl/houston-roughnecks-arlington-renegades-lvWSsjlN\n2023-02-26\nHouston Roughnecks\nArlington Renegades\n\n\n\n\n\n\ndbDisconnect(con)"
+  }
+]
