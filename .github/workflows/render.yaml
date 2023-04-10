@@ -17,6 +17,10 @@ jobs:
           git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - uses: actions/checkout@v3
+
+      - name: Set branch name
+        id: branch
+        run: echo "::set-output name=BRANCH_NAME::${GITHUB_REF##*/}"
       
       - uses: actions/setup-python@v4
         with:
@@ -40,3 +44,4 @@ jobs:
         with:
           branch: gh-pages
           folder: _site
+          target-folder: ${{ steps.branch.outputs.BRANCH_NAME }}
