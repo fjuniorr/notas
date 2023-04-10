@@ -14,6 +14,8 @@ categories:
   - design spec
 ---
 
+[Link para uma nota que so existe nesse branch](/20230409T230121)
+
 Download do arquivo [excel](smart-data-dumb-code.xlsx)
 
 ```{r}
