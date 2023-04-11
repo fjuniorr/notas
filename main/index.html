@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Listing Example</title>
+<title>Base de conhecimento - Assessoria de Dados SPLOR</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Listing Example</h1>
+<h1 class="title">Base de conhecimento - Assessoria de Dados SPLOR</h1>
 </div>
 
 
@@ -153,172 +153,151 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="0.045">
-<div class="body">
-<a href="./20230409T230121/index.html">
-<h3 class="no-anchor listing-title">
-A new note
-</h3>
-<div class="listing-subtitle">
-
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="listing-description">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+<th>
+Description
+</th>
+<th>
+Categories
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="0.045" data-listing-title-sort="A new note" data-listing-filename-sort="index.md">
+<td class="listing-date">
+</td>
+<td class="listing-title">
+<a href="./20230409T230121/index.html" class="title">A new note</a>
+</td>
+<td class="listing-author">
+</td>
+<td class="listing-description">
 This is a new note.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230409T230121/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="research,design spec" data-listing-date-sort="1675209600000" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="3.295">
-<div class="body">
-<a href="./20230324T170445/index.html">
-<h3 class="no-anchor listing-title">
-Fonte de Recurso União
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
-research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('design spec'); return false;">
-design spec
-</div>
-</div>
-<a href="./20230324T170445/index.html">
-<div class="listing-description">
-Link para uma nota que so existe nesse branch
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230324T170445/index.html">
-<div class="listing-date">
+</td>
+<td class="listing-categories">
+</td>
+</tr>
+<tr data-index="1" data-categories="research,design spec" data-listing-date-sort="1675209600000" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="3.295" data-listing-title-sort="Fonte de Recurso União" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 Feb 1, 2023
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./20230324T170445/index.html" class="title">Fonte de Recurso União</a>
+</td>
+<td class="listing-author">
 Andrey
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="research" data-listing-date-sort="1585008000000" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="1.82">
-<div class="body">
-<a href="./20230324T135907/index.html">
-<h3 class="no-anchor listing-title">
-Importação
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
-research
-</div>
-</div>
-<a href="./20230324T135907/index.html">
-<div class="listing-description">
-<p>Especificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230324T135907/index.html">
-<div class="listing-date">
+</td>
+<td class="listing-description">
+Link para uma nota que so existe nesse branch
+</td>
+<td class="listing-categories">
+research,design spec
+</td>
+</tr>
+<tr data-index="2" data-categories="research" data-listing-date-sort="1585008000000" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="1.82" data-listing-title-sort="Importação" data-listing-filename-sort="index.md">
+<td class="listing-date">
 Mar 24, 2020
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./20230324T135907/index.html" class="title">Importação</a>
+</td>
+<td class="listing-author">
 Francisco
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="0.36">
-<div class="body">
-<a href="./20230324T212145/index.html">
-<h3 class="no-anchor listing-title">
-Python Jupyter
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
+</td>
+<td class="listing-description">
+Especificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.
+</td>
+<td class="listing-categories">
+research
+</td>
+</tr>
+<tr data-index="3" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="0.36" data-listing-title-sort="Python Jupyter" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+</td>
+<td class="listing-title">
+<a href="./20230324T212145/index.html" class="title">Python Jupyter</a>
+</td>
+<td class="listing-author">
+</td>
+<td class="listing-description">
 For a demonstration of a line plot on a polar axis, see Figure&nbsp;1.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230324T212145/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="research" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="1.65">
-<div class="body">
-<a href="./20230409T213529/index.html">
-<h3 class="no-anchor listing-title">
-Python basics
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
-research
-</div>
-</div>
-<a href="./20230409T213529/index.html">
-<div class="listing-description">
+</td>
+<td class="listing-categories">
+</td>
+</tr>
+<tr data-index="4" data-categories="research" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="1.65" data-listing-title-sort="Python basics" data-listing-filename-sort="index.ipynb">
+<td class="listing-date">
+</td>
+<td class="listing-title">
+<a href="./20230409T213529/index.html" class="title">Python basics</a>
+</td>
+<td class="listing-author">
+</td>
+<td class="listing-description">
 <strong>A Tutorial by Jacob Gerace</strong>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230409T213529/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="research,design spec" data-listing-date-sort="1675209600000" data-listing-file-modified-sort="1681238115020" data-listing-reading-time-sort="0.11">
-<div class="body">
-<a href="./20230324T213123/index.html">
-<h3 class="no-anchor listing-title">
-SQL code chunks
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
+</td>
+<td class="listing-categories">
 research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('design spec'); return false;">
-design spec
-</div>
-</div>
-<a href="./20230324T213123/index.html">
-<div class="listing-description">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./20230324T213123/index.html">
-<div class="listing-date">
+</td>
+</tr>
+<tr data-index="5" data-categories="research,design spec" data-listing-date-sort="1675209600000" data-listing-file-modified-sort="1681249776198" data-listing-reading-time-sort="0.11" data-listing-title-sort="SQL code chunks" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 Feb 1, 2023
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./20230324T213123/index.html" class="title">SQL code chunks</a>
+</td>
+<td class="listing-author">
 Henrique
-</div>
-</a>
-</div>
-</div>
-</div>
+</td>
+<td class="listing-description">
+
+</td>
+<td class="listing-categories">
+research,design spec
+</td>
+</tr>
+</tbody>
+
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

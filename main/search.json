@@ -51,9 +51,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Listing Example",
+    "title": "Base de conhecimento - Assessoria de Dados SPLOR",
     "section": "",
-    "text": "A new note\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nFonte de Recurso União\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nAndrey\n\n\n\n\n\n\n\n\nImportação\n\n\n\n\n\n\n\nresearch\n\n\n\n\nEspecificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.\n\n\n\n\n\n\nMar 24, 2020\n\n\nFrancisco\n\n\n\n\n\n\n\n\nPython Jupyter\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nPython basics\n\n\n\n\n\n\n\nresearch\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nSQL code chunks\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nHenrique\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\n\n\nA new note\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nFonte de Recurso União\n\n\nAndrey\n\n\n\n\n\nresearch,design spec\n\n\n\n\nMar 24, 2020\n\n\nImportação\n\n\nFrancisco\n\n\nEspecificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.\n\n\nresearch\n\n\n\n\n\n\nPython Jupyter\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython basics\n\n\n\n\n\n\n\nresearch\n\n\n\n\nFeb 1, 2023\n\n\nSQL code chunks\n\n\nHenrique\n\n\n\n\n\nresearch,design spec\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "20230409T213529/index.html",
