@@ -20,6 +20,7 @@ jobs:
         run: make render
 
       - name: Store branch name
+        id: branch
         run: echo "BRANCH_NAME=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
 
       - name: Deploy to GitHub Pages
