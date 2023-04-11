@@ -24,9 +24,8 @@ jobs:
       - name: Render website
         run: make render
 
-      - name: Set branch name
-        id: branch
-        run: echo "::set-output name=BRANCH_NAME::${GITHUB_REF##*/}"
+      - name: Store branch name
+        run: echo "BRANCH_NAME=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
