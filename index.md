@@ -1,7 +1,7 @@
 ---
-title: "Listing Example"
+title: "Base de conhecimento - Assessoria de Dados SPLOR"
 listing: 
-    type: default
+    type: table
     categories: true
     fields: [date, title, author, description, categories]
 ---
