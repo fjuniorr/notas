@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "20230324T170445/index.html",
+    "href": "20230324T170445/index.html",
+    "title": "Fonte de Recurso União",
+    "section": "",
+    "text": "Link para uma nota que so existe nesse branch\nDownload do arquivo excel\nEsse conjunto de dados visa divulgar a matriz de correspondências entre as classificações orçamentárias vigentes no Estado de Minas Gerais e as codificações das fontes de recurso estabelecidas por meio da Portaria Conjunta STN SOF nº 20/2021 e da Portaria STN n° 710/2021 (e atualizações)."
+  },
+  {
+    "objectID": "20230324T170445/index.html#leiaute-arquivos",
+    "href": "20230324T170445/index.html#leiaute-arquivos",
+    "title": "Fonte de Recurso União",
+    "section": "1 Leiaute arquivos",
+    "text": "1 Leiaute arquivos\nOs dois arquivos serão atualizados diariamente com as novas combinações de classificações orçamentárias1 de receita e despesa que são criadas durante a execução orçamentária.\nAlgumas observações gerais:\n\nUm segundo conjunto de dados (em leiaute a ser definido), será publicado com o código e descrição das fontes de recurso da Portaria STN n° 710/2021. O leiaute vai armazenar os históricos das descrições para permitir a correta divulgação das informações conforme classificações orçamnetárias vigentes à época.\nNovas classificações orçamentárias podem ser adicionadas nas matrizes a partir da publicação de novas Portarias pela STN e/ou discussões do GT SEPLAG/SEF.\n\n\n\n\n\n\n\nNota\n\n\n\nA divulgação em tranparência ativa de códigos e descrição das classificações orçamentárias acontece no via Classificador Econômico da Despesa. No entanto, o formato legível por máquina hoje divulgado não permite a identificação do período em que as descrições da classificação orçamentária estavam vigentes.\nA sugestão é utilizar um formato que seja válido tanto para o classificador (a ser publicado no Portal de Dados Abertos), quanto para o processo específico relacionado a fonte de recurso da STN.\nUma sugestão de leiaute (que ainda carece de discussão e validação) é:\n\n\n\n\nTabela 1: Classificador Econômico da Desoesa\n\n\n\n\n\n\n\n\nCODIGO\nDESCRICAO\nDATA_INICIO_VIGENCIA\nDATA_FIM_VIGENCIA\n\n\n\n\n500\nRecursos Ordinários\n\n2023-02-01\n\n\n500\nRecursos não Vinculados\n2023-02-01\n2023-05-01\n\n\n500\nRecursos não Vinculados de Impostos\n2023-05-01\n\n\n\n\n\n\n\nA DATA_FIM_VIGENCIA da linha 1 é igual a DATA_INICIO_VIGENCIA da linha 2, indicando que em maio/2023 deve ser utilizada a descrição “Recursos não Vinculados”.\nOs valores ausentes de DATA_INICIO_VIGENCIA na linha 1 e DATA_FIM_VIGENCIA na linha 3 indicam que essa descrição se extende de forma indefinida.\n\n\n\n1.1 Matriz de correspondência - Despesa\nO leiaute da matriz de despesa é\n\n\n\nTabela 2: Matriz Despesa\n\n\nFONTE_STN\nANO\nMES\nUO\nACAO\nGRUPO\nFONTE\nIPU\n\n\n\n\n540\n2023\n1\n1261\n2066\n1\n23\n1\n\n\n500\n2023\n1\n2061\n4204\n1\n10\n1\n\n\n502\n2023\n2\n2061\n4204\n1\n10\n1\n\n\n\n\nObservações:\n\nIndependentemente de quando uma nova linha é adicionada na matriz Tabela 2, os empenhos correspondentes devem ter sua FONTE_STN_COD atualizada;\nOs empenhos registrados na classificação 1261|2066|1.23.1 devem ser classificados na FONTE_STN_COD 540 de janeiro/2023 em diante;\nOs empenhos registrados na classificação 2061|4204|1.10.1 devem ser classificados na FONTE_STN_COD 502 somente a partir de fevereiro de 2023;\nOs empenhos registrados em classificações que não estão presentes na matriz devem ser exibidos com a FONTE_STN_COD 898, Recursos a Classificar.\n\n\n\n1.2 Matriz de correspondência - Receita\nO leiaute da matriz de receita é\n\n\n\n\nTabela 3: Matriz Receita\n\n\nFONTE_STN\nANO\nMES\nUO\nFONTE\nRECEITA\n\n\n\n\n552\n2023\n1\n1261\n36\n1922\n\n\n501\n2023\n1\n2371\n60\n1321\n\n\n\n\n\n\nAs mesmas observações realizadas na seção Seção 1.1 para os empenhos são válidas para os registros de arrecadação da receita."
+  },
+  {
+    "objectID": "20230324T212145/index.html",
+    "href": "20230324T212145/index.html",
+    "title": "Python Jupyter",
+    "section": "",
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\n\n\n\n\nImportant\n\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis\n\n\n\n\nThis is markdown\n\\[\nx_i = y_i\n\\]"
+  },
+  {
+    "objectID": "20230324T135907/index.html",
+    "href": "20230324T135907/index.html",
+    "title": "Importação",
+    "section": "",
+    "text": "Context\nWhat\n\nAcceptance criteria\n\nWhy\nHow\nOpen questions\nExamples/Research\n\nLow-fidelity mockup\nOther examples"
+  },
+  {
+    "objectID": "20230324T135907/index.html#context",
+    "href": "20230324T135907/index.html#context",
+    "title": "Importação",
+    "section": "Context",
+    "text": "Context\nLink para outra nota\n\nApesar de serem ambas iniciativas da Open Knowledge, o CKAN não possui suporte nativo para a importação de pacotes de dados. Atualmente a CGE tem feito a importação por meio de uma ferramenta CLI desenvolvida internamente, o dpckan. O dpckan atualmente faz o mapeamento de algumas propriedades entre frictionless e CKAN, mas ainda armazena o arquivo datapackage.json como um recurso adicional no conjunto de dados do CKAN.\nApesar da importância de um fluxo de importação programático que permita a automatização das publicações e atualizações, as oficinas piloto com os órgãos e entidades tem demonstrado a importância de um fluxo de importação manual via interface gráfica para usuários iniciantes e/ou não técnicos1."
+  },
+  {
+    "objectID": "20230324T135907/index.html#open-questions",
+    "href": "20230324T135907/index.html#open-questions",
+    "title": "Importação",
+    "section": "Open questions",
+    "text": "Open questions\n\nComo o pacote de dados e seu conteúdo devem ser armazenados no CKAN?\nÉ possível uma conversão ida-e-volta sem perda de metadados (lossless) entre um pacote de dados frictionless e um conjunto de dados CKAN?\nComo permitir que alterações nos metadados sejam realizadas pela interface gráfica e/ou interface de linha de comando? Vide dpckan#153"
+  },
+  {
+    "objectID": "20230324T135907/index.html#examplesresearch",
+    "href": "20230324T135907/index.html#examplesresearch",
+    "title": "Importação",
+    "section": "Examples/Research",
+    "text": "Examples/Research\n\nReplicação e sincronização de um data package com CKAN - Discussão sobre o fluxo de importação de pacotes de dados armazenados em um repositório git com indicação de ferramentas possivelmente úteis oferecidas por um ex-desenvolvedor da Open Knowledge. Ele relatou que a extensão ckanext-datapackager é próxima do que precisamos, mas não permite sobrescrever um conjunto de dados já existente.\nFrictionless CKAN Mapper - Bibliotecas em Python e Javascript para conversão de pacotes de dados frictionless e conjuntos de dados CKAN.\nCKAN Client Guide - Guia da Datopian sobre as bibliotecas ckan-client-py e ckan-client-js para interação programática com uma instância do CKAN\nSupport for Simple Data Format Data Packages #778 - Discussão sobre importação e exportação de pacotes de dados usando Open Refine\nAdvance CKAN plugin to the stable state #475\nCKAN - Data Curator Integration"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "A new note\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nFonte de Recurso União\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nAndrey\n\n\n\n\n\n\n\n\nImportação\n\n\n\n\n\n\n\nresearch\n\n\n\n\nEspecificação sobre uma coisa relevante. Posso criar algo de mais de uma linha aqui.\n\n\n\n\n\n\nMar 24, 2020\n\n\nFrancisco\n\n\n\n\n\n\n\n\nPython Jupyter\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nPython basics\n\n\n\n\n\n\n\nresearch\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nSQL code chunks\n\n\n\n\n\n\n\nresearch\n\n\ndesign spec\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nHenrique\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "20230409T213529/index.html",
+    "href": "20230409T213529/index.html",
+    "title": "Python basics",
+    "section": "",
+    "text": "A Tutorial by Jacob Gerace\n\n\n\nThe feeling that you’ll “know where to start” when you see python code in lecture, or when you need to write python for an assignment.\n(You won’t be a python expert after one hour)\nBasics to variables, lists, conditionals, functions, loops, and the numpy package.\nResources to look further\n\n\n\n\nClean syntax\nThe same code can run on all Operating Systems\nExtensive first and third party libraries (of particular note for our purposes is NumPy)\n\n\n\n\n\nThis text is written in a Markdown block. Markdown is straightforward way to format writeups in Jupyter, but I won’t cover it here for the sake of brevity.\nSee if you can use Markdown in your next homework, here’s a link that explains the formatting: https://daringfireball.net/projects/markdown/syntax .\nYou can also look at existing Markdown examples (i.e. this worksheet) and emulate the style. Double click a Markdown box in Jupyter to show the code.\n\n\n\n\n\nLaTeX (pronounced “La-tech”) is a language itself used widely to write documents with symbolic math\nWhen you add a mathematical formula to these markdown blocks, the math is in LaTeX.\nEx from class: \\[V \\frac{dC}{dt} = u(t) - Q C(t)\\]\nA good resource: https://en.wikibooks.org/wiki/LaTeX/Mathematics\n\n\n\n\n\n\n\n\n#A variable stores a piece of data and gives it a name\nanswer = 42\n\n#answer contained an integer because we gave it an integer!\n\nis_it_thursday = True\nis_it_wednesday = False\n\n#these both are 'booleans' or true/false values\n\npi_approx = 3.1415\n\n#This will be a floating point number, or a number containing digits after the decimal point\n\nmy_name = \"Jacob\"\n#This is a string datatype, the name coming from a string of characters\n\n#Data doesn't have to be a singular unit\n\n#p.s., we can print all of these with a print command. For Example:\nprint(answer)\nprint(pi_approx)\n\n42\n3.1415\n\n\n\n\n\n\n\n#What if we want to store many integers? We need a list!\nprices = [10, 20, 30, 40, 50]\n\n#This is a way to define a list in place. We can also make an empty list and add to it.\ncolors = []\n\ncolors.append(\"Green\")\ncolors.append(\"Blue\")\ncolors.append(\"Red\")\n\nprint(colors)\n\n#We can also add unlike data to a list\nprices.append(\"Sixty\")\n\n#As an exercise, look up lists in python and find out how to add in the middle of a list!\n\nprint(prices)\n#We can access a specific element of a list too:\n\nprint(colors[0])\nprint(colors[2])\n\n#Notice here how the first element of the list is index 0, not 1! \n#Languages like MATLAB are 1 indexed, be careful!\n\n#In addition to lists, there are tuples\n#Tuples behave very similarly to lists except that you can't change them \n# after you make them\n\n#An empty Tuple isn't very useful:\nempty_tuple = ()\n\n#Nor is a tuple with just one value:\none_tuple = (\"first\",)\n\n#But tuples with many values are useful:\nrosa_parks_info = (\"Rosa\", \"Parks\", 1913, \"February\", 4)\n\n#You can access tuples just like lists\nprint(rosa_parks_info[0] + \" \" + rosa_parks_info[1])\n\n# You cannot modify existing tuples, but you can make new tuples that extend \n# the information.\n# I expect Tuples to come up less than lists. So we'll just leave it at that. \n\n['Green', 'Blue', 'Red']\n[10, 20, 30, 40, 50, 'Sixty']\nGreen\nRed\n\n\n\n\n\n\nfloat1 = 5.75\nfloat2 = 2.25\n#Addition, subtraction, multiplication, division are as you expect\n\nprint(float1 + float2)\nprint(float1 - float2)\nprint(float1 * float2)\nprint(float1 / float2)\n\n#Here's an interesting one that showed up in the first homework in 2017. Modulus: \nprint(5 % 2)\n\n8.0\n3.5\n12.9375\n2.5555555555555554\n1\n\n\n\n\n\n\n#Just about every standard math function on a calculator has a python equivalent pre made.\n#however, they are from the 'math' package in python. Let's add that package!\nimport math\nprint(math.log(float1))\nprint(math.exp(float2))\nprint(math.pow(2,5))\n# There is a quicker way to write exponents if you want:\nprint(2.0**5.0)\n\n#Like in MATLAB, you can expand the math to entire lists\nlist3 = [1, 2, 3, 4, 5]\nprint(2 * list3)\n\n\n#We can plot easily in Python like in matlab, just import the relevant package!\n%matplotlib inline\nimport matplotlib.pyplot as plt\n\nx_vals = [-2, -1, 0, 1, 2]\ny_vals = [-4, -2, 0, 2, 4]\nplt.plot(x_vals, y_vals)\n\n1.749199854809259\n9.487735836358526\n32.0\n32.0\n\n\n\n\n\n\n\n\n\n#Repeat code until a conditional statement ends the loop\n\n#Let's try printing a list\nfib = [1, 1, 2, 3, 5, 8]\n\n#While loops are the basic type\ni = 0\nwhile(i < len(fib)):\n    print(fib[i])\n    i = i + 1\n    \n#In matlab, to do the same thing you would have the conditional as: counter < (length(fib) + 1)\n#This is because matlab starts indexing at 1, and python starts at 0.\n    \n#The above type of loop is so common that the 'for' loop is the way to write it faster.\n\nprint(\"Let's try that again\")\n#This is most similar to for loops in matlab\nfor i in range(0, len(fib)) :\n    print(fib[i])\n\nprint(\"One more time:\")\n#Or you can do so even neater\nfor e in fib:\n    print(e)\n\n1\n1\n2\n3\n5\n8\nLet's try that again\n1\n1\n2\n3\n5\n8\nOne more time:\n1\n1\n2\n3\n5\n8\n\n\n\n\n\n\n\nIf you still feel VERY lost: Code Academy\nIf you want a good reference site: Official Python Reference\nIf you want to learn python robustly: Learn Python the Hard Way\nFeel free to contact me at: jgerace (at) nd (dot) edu\n\n\n< 1.1 Getting Started with Python and Jupyter Notebooks | Contents | Tag Index | 1.3 Python Conditionals and Libraries >"
+  },
+  {
+    "objectID": "20230409T230121/index.html",
+    "href": "20230409T230121/index.html",
+    "title": "A new note",
+    "section": "",
+    "text": "This is a new note.\nx = 5\nNice\nONe commit.\nsecond commit."
+  },
+  {
+    "objectID": "20230324T213123/index.html",
+    "href": "20230324T213123/index.html",
+    "title": "SQL code chunks",
+    "section": "",
+    "text": "library(DBI)\ncon <- dbConnect(RSQLite::SQLite(), \"oddsportal.db\")"
+  },
+  {
+    "objectID": "20230324T213123/index.html#view-the-file",
+    "href": "20230324T213123/index.html#view-the-file",
+    "title": "SQL code chunks",
+    "section": "2 View the file",
+    "text": "2 View the file\n\nselect id, date, home, away from xfl where stage = 'Scheduled';\n\n\n3 records\n\n\n\n\n\n\n\n\nid\ndate\nhome\naway\n\n\n\n\n/american-football/usa/xfl/seattle-sea-dragons-st-louis-battlehawks-bkwGph44\n2023-02-23\nSeattle Sea Dragons\nSt. Louis BattleHawks\n\n\n/american-football/usa/xfl/orlando-guardians-san-antonio-brahmas-K4ROrWYG\n2023-02-26\nOrlando Guardians\nSan Antonio Brahmas\n\n\n/american-football/usa/xfl/houston-roughnecks-arlington-renegades-lvWSsjlN\n2023-02-26\nHouston Roughnecks\nArlington Renegades\n\n\n\n\n\n\ndbDisconnect(con)"
+  }
+]
